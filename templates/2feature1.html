@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premans</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/feature1.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="logo"><a class="link-home" href="{{ url_for('dashboard') }}">Premans</a></div>
+            <nav class="d-none d-md-block">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('dashboard') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('feature1') }}">Feature</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('aboutus') }}">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('contactus') }}">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <div class="upload-box">
+                <h2>Upload CSV</h2>
+                <form id="upload-form" action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
+                    <div class="upload-area">
+                        <p>Drag & drop files or <a href="#">Browse</a></p>
+                        <p>Supported formats: CSV</p>
+                    </div>
+                    <input type="file" id="upload" name="file" accept=".csv">
+                    <label for="upload">Upload Files</label>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>           
+        </section>
+    </main>
+   </body>
+</html>

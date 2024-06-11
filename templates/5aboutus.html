@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premans - About Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aboutus.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="logo"><a class="link-home" href="{{ url_for('dashboard') }}">Premans</a></div>
+            <nav class="d-none d-md-block">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('dashboard') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('feature1') }}">Service</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('aboutus') }}">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('contactus') }}"></a></li>
+                    </ul>
+                </nav>           
+        </div>    
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    Welcome to Premans, an application specialized in predicting the sales of drug products. We aim to provide accurate predictions about the success or potential loss of the product. With a focus on innovation and efficiency, Premans is committed to improving work efficiency and facilitating users with an easy-to-use application to analyze sales levels.
+                </p>
+            </div>
+            <div class="philosophy-vision">
+                <div class="philosophy">
+                    <h3>Our Philosophy</h3>
+                    <p>
+                        Empowering informed decisions through precise sales forecasts, 
+                        Premans drives innovation and efficiency to optimize product success and mitigate potential
+                        losses.
+                    </p>
+                </div>
+                <div class="vision">
+                    <h3>Vision for the future</h3>
+                    <p>
+                        In our vision for the future, Premans aims to revolutionize the pharmaceutical 
+                        industry by seamlessly integrating cutting-edge technology and predictive analytics, 
+                        ultimately shaping a landscape where informed decisions pave the way for unprecedented
+                         growth and sustainability.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <main>
+            <section class="teamgroup">
+                <div class="team-member">
+                    <div class="fotokita">
+                        <img src="{{ url_for('static', filename='img/fotopremans/alfian-preman.png') }}" alt="ALFIAN WIRAWAN">
+                    </div>
+                    <h3>ALFIAN WIRAWAN</h3>
+                    <p>Universitas Yarsi, Teknik Informatika</p>
+                </div>
+                <div class="team-member">
+                    <div class="fotokita">
+                        <img src="{{ url_for('static', filename='img/fotopremans/dela-preman.png') }}" alt="ANISA DELA SAFITRI">
+                    </div>
+                    <h3>ANISA DELA SAFITRI</h3>
+                    <p>Universitas Yarsi, Teknik Informatika</p>
+                </div>
+                <div class="team-member">
+                    <div class="fotokita">
+                        <img src="{{ url_for('static', filename='img/fotopremans/rifli_preman.png') }}" alt="MUH RIFLI">
+                    </div>
+                    <h3>MUHAMMAD RIFLI</h3>
+                    <p>Universitas Terbuka, Biologi</p>
+                </div>
+            </section>
+        </main>
+        <main>
+            <section class="teamgroup2">
+                <div class="team-member4">
+                    <div class="fotokita2">
+                    <img src="{{ url_for('static', filename='img/fotopremans/abid_preman.png') }}" alt="ABID HUMAM MUHTADI ">
+                    </div>
+                    <h3>ABID HUMAM MUHTADI </h3>
+                    <p>Universitas Terbuka, Statistika</p>                    
+                    </div>
+                </div>
+                <div class="team-member4">
+                    <div class="fotokita2">
+                    <img src="{{ url_for('static', filename='img/fotopremans/erin-preman.png') }}" alt="DHEANDRA ERIN HARTANTO ">
+                    <h3>DHEANDRA ERIN HARTANTO </h3>
+                    <p>Universitas Pancasila, Ilmu Komunikasi</p>
+                    </div>
+                </div>
+                <div class="team-member4">
+                    <div class="fotokita2">
+                    <img src= "{{ url_for('static', filename='img/fotopremans/adit-preman.png') }}" alt="ADITYA RENALDY ">
+                    <h3>ADITYA RENALDY </h3>
+                    <p>Universitas Pancasila, Hukum</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </main>
+</body>
+</html>

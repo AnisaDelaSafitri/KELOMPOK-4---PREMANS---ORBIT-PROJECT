@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #5c7aff, #6a8dff);
+    color: white;
+    padding: 0;
+}
+
+header {
+    background: #2b2b2b;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    background-color: grey;
+    transition: .3s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    padding: 20px;
+}
+
+.upload-section {
+    display: flex;
+    gap: 40px;
+}
+
+.upload-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    size: 100%;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    text-transform: uppercase;
+    background: #88aaff;
+    text-align: center;
+    padding: 15px 40px;
+    font-size: medium;
+    letter-spacing: 1.5px;
+    user-select: none;
+}
+
+.upload-box h2 {
+    margin-bottom: 20px;
+}
+
+.upload-area {
+    border: 2px dashed #aaa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.upload-area a {
+    color: #88aaff;
+    text-decoration: none;
+}
+
+.upload-area p {
+    margin: 5px 0;
+}
+
+.upload-box button {
+    padding: 10px 20px;
+    background-color: #88aaff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.input-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.input-group { 
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #88aaff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add{
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #88aaff;
+    font-size: large;
+    font-weight: bold;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 15px;
+}
+
+.delete{
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: large;
+    font-weight: bold;
+    color: #fff;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+input{
+    padding: 10px 10px;
+    background: #fff;
+    border: none;
+    width: 50%;
+    border-radius: 5px;
+} 
+
+input:focus{
+    outline: 1px solid #fff;
+}
+
+.input-group input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.input-group button {
+    padding: 10px;
+    background-color: #88aaff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.explanation {
+    margin-bottom: 20px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    background-color: #88aaff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.link-home{
+    color: white;
+    text-decoration: none;
+}
+

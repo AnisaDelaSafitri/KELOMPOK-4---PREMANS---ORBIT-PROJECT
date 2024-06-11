@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premans</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="logo"><a class="link-home" href="{{ url_for('dashboard') }}">Premans</a></div>
+            <nav class="d-none d-md-block">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('dashboard') }}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('feature1') }}">Service</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('aboutus') }}">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="{{ url_for('contactus') }}"></a></li>
+                </ul>
+            </nav>           
+        </div>
+    </header>
+    <main class="main">
+        <div class="container text-center text-md-left">
+            <h1 class="display-4">WELCOME TO</h1>
+            <h2 class="display-1">Premans</h2>
+            <p class="lead">Premans is a platform that allows you to view sales growth forecasts, help improve efficiency, and optimize the use of your time.</p>
+            <a href="{{ url_for('feature1') }}" class="btn btn-primary btn-lg">Show more</a>
+        </div>        
+    </main>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
